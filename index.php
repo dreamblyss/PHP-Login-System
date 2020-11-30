@@ -1,3 +1,12 @@
+<?php 
+
+//allow the config
+define('__CONFIG__', true);
+//Require the config
+require_once 'inc/config.php';
+
+?>
+
 <!Doctype html>
 <html lang="en">
 <head>
@@ -11,48 +20,33 @@
 </head>
 
 <body>
-<!--JQuery Required-->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!--UIKits JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/js/uikit-core.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/js/uikit-icons.min.js"></script>
 
 <div class="uk-section uk-container">
-        <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid>
-        
-        
-<form class="uk-form-stacked js-login">
 
-<!--Email-->
-<div class="uk-margin">
-    <label class="uk-form-label" for="form-stacked-text">Email</label>
-    <div class="uk-form-controls">
-        <input class="uk-input" id="form-stacked-text" type="email" placeholder="email@email.com" required />
-    </div>
+<?php 
+
+    echo "Hello World! Today is";
+    echo date("Y m d");
+
+?>
+
+
+
+
+
+
+
+<?php require_once "inc/footer.php"; ?>
+
+<p>
+<a href="/login.php">Login</a>
+
+<a href="/register.php">Register</a>
+</p>
+
 </div>
 
-<!--Password-->
-<div class="uk-margin">
-    <label class="uk-form-label" for="form-stacked-text">Password</label>
-    <div class="uk-form-controls">
-        <input class="uk-input" id="form-stacked-text" type="password" placeholder="Your Password" required />
-    </div>
-</div>
-
-<!--Submit Button-->
-<div class="uk-margin">
-    <button class="uk-button uk-button-default" type="submit">Login</button>
-</div>
-
-
-</form>
-
-        </div>
-
-    </div>
-
-    </body>
+</body>
 
 </html>
